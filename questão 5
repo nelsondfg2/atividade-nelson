@@ -1,0 +1,40 @@
+package dever;
+
+import java.util.Scanner;
+
+public class questão5 {
+    public static void main(String[] args) {
+        Scanner scam = new Scanner(System.in);
+
+        System.out.println("Menu:");
+        System.out.println("1 Pizza");
+        System.out.println("2 Hambúguer");
+        System.out.println("3 Salada");
+        System.out.println("4 Bebida");
+        System.out.println("Digite o número do pedido");
+
+        int pedido = scam.nextInt();
+
+        if (pedido == 1) {
+            System.out.println("Pizza quatro queijos: molho de tomate, mussarela, provolone, gorgonzola e parmesão");
+            System.out.println("Preço: R$:25,00");
+        }
+        else if (pedido == 2) {
+            System.out.println("X tudo: pão de hambúrguer, carne bovina, queijo " +
+                    ", presunto, bacon, ovo," +
+                    " alface, tomate, milho, batata palha, ketchup e mostarda");
+            System.out.println("Preço: R$:15,00");
+        }
+        else if (pedido == 3) {
+            System.out.println("Salada Caesar: alface, croutons, queijo parmesão e molho especial.");
+            System.out.println("Preço: R$:23,00");
+        }
+        else if (pedido == 4) {
+            System.out.println("Sucos: laranja, maracujá, manga, uva e caju.");
+            System.out.println("Preço: R$:5,00");
+        } else {
+            System.out.println("Número não corresponde a um prato");
+        }
+        scam.close();
+    }
+}
