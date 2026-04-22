@@ -1,0 +1,33 @@
+[questão1.java](https://github.com/user-attachments/files/26988874/questao1.java)
+package dever;
+
+import java.util.Scanner;
+
+class questão1 {
+    public static void main(String[] args){
+
+    Scanner scam = new Scanner(System.in);
+
+        System.out.print("Digite o salário");
+        double salario = scam.nextDouble();
+
+        System.out.print("Digite anos de serviço");
+        int anos = scam.nextInt();
+
+        double bonus;
+
+        if (anos > 5) {
+            bonus = salario * 0.05;
+        } else {
+            bonus = salario * 0.013;
+        }
+        double novoSalario = salario + bonus;
+
+        System.out.println("Antigo salário"  + salario);
+        System.out.println("Bonus"  + bonus);
+        System.out.println("Novo salário"  + novoSalario);
+
+        scam.close();
+
+    }
+}
