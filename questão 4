@@ -1,0 +1,35 @@
+package dever;
+
+import java.util.Scanner;
+
+public class questão4 {
+    public static void main(String[] args) {
+        Scanner scam = new Scanner(System.in);
+
+        System.out.println("Digite dois numeros");
+        double numUm = scam.nextDouble();
+        double numDois = scam.nextDouble();
+
+        System.out.println("Escolha a operação: 1 = soma, 2 = subtração, 3 = multiplicação e 4 = divisão.");
+
+        int operacao = scam.nextInt();
+        double resultado;
+
+        if (operacao == 1) {
+            resultado = numUm + numDois;
+            System.out.println("Resultado:" + resultado);
+        } else if (operacao == 2) {
+            resultado = numUm - numDois;
+            System.out.println("Resultado:" + resultado);
+        } else if (operacao == 3) {
+            resultado = numUm * numDois;
+            System.out.println("Resultado:" + resultado);
+        } else if (operacao == 4) {
+            resultado = numUm / numDois;
+            System.out.println("Resultado:" + resultado);
+        } else {
+            System.out.println("Número não corresponde com uma operação");
+        }
+        scam.close();
+    }
+}
